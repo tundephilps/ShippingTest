@@ -10,7 +10,7 @@ import {
 import { AntDesign, Ionicons, FontAwesome } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox";
 
-const AccordionCard = ( data : any ) => {
+const AccordionCard = (data: any) => {
   const { item, index } = data;
 
   const [isChecked, setChecked] = useState<boolean>(item.isChecked);
@@ -44,11 +44,11 @@ const AccordionCard = ( data : any ) => {
   });
 
   return (
-    <View style={styles.cardContainer} key={ index }>
+    <View style={styles.cardContainer} key={index}>
       <View style={styles.header}>
         <Checkbox
-          value={ isChecked }
-          onValueChange={ setChecked }
+          value={isChecked}
+          onValueChange={setChecked}
           color={isChecked ? "#4630EB" : undefined}
         />
         <Image
@@ -58,14 +58,15 @@ const AccordionCard = ( data : any ) => {
         />
         <View>
           <Text>AWB</Text>
-          <Text style={styles.awbNumber}>{ item.name }</Text>
+          <Text style={styles.awbNumber}>{item.name}</Text>
           <Text style={styles.route}>
-            {item.origin_state} <AntDesign name="arrowright" size={14} color="blue" />{" "}
+            {item.origin_state}{" "}
+            <AntDesign name="arrowright" size={14} color="blue" />{" "}
             {item.destination_state}
           </Text>
         </View>
         <View style={styles.statusContainer}>
-          <Text style={styles.statusText}>{ item.status }</Text>
+          <Text style={styles.statusText}>{item.status}</Text>
         </View>
         <TouchableOpacity
           style={[
@@ -86,13 +87,13 @@ const AccordionCard = ( data : any ) => {
         <View style={styles.detailsRow}>
           <View>
             <Text style={styles.detailLabel}>Origin</Text>
-            <Text style={styles.detailValue}>{ item.origin_state }</Text>
+            <Text style={styles.detailValue}>{item.origin_state}</Text>
             <Text style={styles.detailAddress}>Doki 22 Nile Street</Text>
           </View>
           <AntDesign name="arrowright" size={24} color="blue" />
           <View>
             <Text style={styles.detailLabel}>Destination</Text>
-            <Text style={styles.detailValue}>{ item.destination_state }</Text>
+            <Text style={styles.detailValue}>{item.destination_state}</Text>
             <Text style={styles.detailAddress}>Sohma, 22 Max Street</Text>
           </View>
         </View>
@@ -150,6 +151,7 @@ const styles = StyleSheet.create({
   },
   statusText: {
     color: "blue",
+    fontSize: 10,
   },
   arrowContainer: {
     padding: 6,
