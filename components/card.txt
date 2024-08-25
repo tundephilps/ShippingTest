@@ -1,0 +1,228 @@
+  {/* Card 1 */}
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              backgroundColor: "#F4F2F8",
+              padding: 12,
+              borderRadius: 10,
+              borderColor: "#2f50c1",
+              borderWidth: 1,
+            }}
+          >
+            <Checkbox
+              value={isChecked}
+              onValueChange={setChecked}
+              color={isChecked ? "#4630EB" : undefined} // Optional: customize the color when checked
+
+              // style={styles.checkbox}
+            />
+            <Image
+              style={{
+                height: 40,
+                width: 40,
+              }}
+              source={require("../../assets/images/box.png")}
+              resizeMode="contain"
+            />
+            <View>
+              <Text>AWB</Text>
+              <Text style={{ fontSize: 18, fontWeight: "600" }}>
+                41785691423
+              </Text>
+              <Text style={{ color: "#757281" }}>
+                Cairo <AntDesign name="arrowright" size={14} color="blue" />
+                Alexandria
+              </Text>
+            </View>
+            <View
+              style={{
+                backgroundColor: "#d9e6fd",
+                padding: 4,
+                borderRadius: 4,
+              }}
+            >
+              <Text style={{ color: "blue" }}>RECEIVED</Text>
+            </View>
+            <View
+              style={{ padding: 6, borderRadius: 50, backgroundColor: "white" }}
+            >
+              <AntDesign name="arrowsalt" size={14} color="black" />
+            </View>
+          </View>
+
+          {/* Card2 */}
+          <View
+            style={{
+              borderColor: "#2f50c1",
+              borderWidth: 1,
+              borderRadius: 10,
+            }}
+          >
+            <View
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "space-between",
+                backgroundColor: "#F4F2F8",
+                padding: 12,
+
+                borderRadius: 10,
+              }}
+            >
+              <Checkbox
+                value={isChecked}
+                onValueChange={setChecked}
+                color={isChecked ? "#4630EB" : undefined} // Optional: customize the color when checked
+
+                // style={styles.checkbox}
+              />
+              <Image
+                style={{
+                  height: 40,
+                  width: 40,
+                }}
+                source={require("../../assets/images/box.png")}
+                resizeMode="contain"
+              />
+              <View>
+                <Text>AWB</Text>
+                <Text style={{ fontSize: 18, fontWeight: "600" }}>
+                  41785691423
+                </Text>
+                <Text style={{ color: "#757281" }}>
+                  Cairo <AntDesign name="arrowright" size={14} color="blue" />
+                  Alexandria
+                </Text>
+              </View>
+              <View
+                style={{
+                  backgroundColor: "#d9e6fd",
+                  padding: 4,
+                  borderRadius: 4,
+                }}
+              >
+                <Text style={{ color: "blue" }}>RECEIVED</Text>
+              </View>
+              <View
+                style={{
+                  padding: 6,
+                  borderRadius: 50,
+                  backgroundColor: "white",
+                }}
+              >
+                <AntDesign name="arrowsalt" size={14} color="black" />
+              </View>
+            </View>
+            {/* Details */}
+            <View
+              style={{
+                backgroundColor: "white",
+                borderRadius: 10,
+                padding: 12,
+              }}
+            >
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <View>
+                  <Text style={{ fontSize: 11, color: "#2f50c1" }}>Origin</Text>
+                  <Text style={{ color: "black", fontSize: 16 }}>Cairo</Text>
+                  <Text style={{ color: "#58536e", fontSize: 13 }}>
+                    Doki 22 Nile Street
+                  </Text>
+                </View>
+                <AntDesign name="arrowright" size={24} color="blue" />
+                <View>
+                  <Text style={{ fontSize: 11, color: "#2f50c1" }}>
+                    Destinaton
+                  </Text>
+                  <Text style={{ color: "black", fontSize: 16 }}>
+                    Alexandria
+                  </Text>
+                  <Text style={{ color: "#58536e", fontSize: 13 }}>
+                    Sohma, 22 Max Street
+                  </Text>
+                </View>
+              </View>
+              {/* Contacts */}
+              <View
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                  paddingTop: 14,
+                  gap: 12,
+                }}
+              >
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#6E91EC",
+                    height: 44,
+                    borderRadius: 10,
+                    width: "30%",
+
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Ionicons name="call" size={24} color="#ffffff" />
+                    <Text
+                      style={{
+                        color: "#ffffff",
+                        fontSize: 16,
+                        marginLeft: 10,
+                      }}
+                    >
+                      Call
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#25d366", // blue color
+                    height: 44,
+                    borderRadius: 10,
+                    width: "45%",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+
+                      justifyContent: "center",
+                    }}
+                  >
+                    <FontAwesome name="whatsapp" size={24} color="#ffffff" />
+                    <Text
+                      style={{
+                        color: "#fff",
+                        fontSize: 16,
+                        marginLeft: 10,
+                      }}
+                    >
+                      Whatsapp
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </View>

@@ -1,0 +1,15 @@
+POST https://shippex-demo.bc.brandimic.com/api/method/login
+Content-Type: application/x-www-form-urlencoded
+
+usr=test@brandimic.com&pwd=testy123@
+
+###
+
+GET https://shippex-demo.bc.brandimic.com/api/method/frappe.client.get_list
+Content-Type: application/json
+
+{
+    "doctype": "AWB",
+    "fields": ["*"],
+    "filters": { }
+}
